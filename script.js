@@ -40,3 +40,5 @@ const mobileNavbar = new MobileNavbar(
     "ul a",
 );
 mobileNavbar.init();
+
+AOS.init();

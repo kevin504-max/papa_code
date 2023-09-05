@@ -9,6 +9,10 @@
 @import "partials/_header";
 @import "partials/_layout";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 
     font-family: 'Sora', sans-serif;
@@ -17,6 +21,18 @@ body {
     position: relative;
 
     // background-color: $primary-normal; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999999;
 }
 
 button {

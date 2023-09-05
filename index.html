@@ -15,6 +15,8 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Letícia Papa</title>
 </head>
 <body>
@@ -23,26 +25,32 @@
     <div class="bg-home">
         <header>
             <nav class="header-content container">
-                <div class="header-logo">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
                     <img 
                         src="assets/logo.svg" 
                         alt="Logo"
+                        data-aos="flip-up" 
+                        data-aos-delay="400" 
+                        data-aos-duration="1500"
                     />
                 </div>
 
-                <div class="mobile-menu">
+                <div class="mobile-menu" data-aos="fade-left" data-aos-delay="350">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
 
-                <ul class="navigation">
-                    <a href="/">Home</a>
-                    <a href="#about">Sobre mim</a>
-                    <a href="#services">Serviços</a>
-                    <a href="https://leticiaspapa.myportfolio.com/dra-larissa-paiva">Portfólio</a>
+                <ul class="navigation" data-aos="fade-left" data-aos-delay="350">
+                    <a href="/" data-aos="flip-up" data-aos-delay="350">Home</a>
+                    <a href="#about" data-aos="flip-up" data-aos-delay="350">Sobre mim</a>
+                    <a href="#services" data-aos="flip-up" data-aos-delay="350">Serviços</a>
+                    <a href="https://leticiaspapa.myportfolio.com/dra-larissa-paiva" data-aos="flip-up" data-aos-delay="350">Portfólio</a>
                     <a 
                         href="https://api.whatsapp.com/send/?phone=%553192414546&text=Tenho+interesse+nos+seus+servi%C3%A7os+de+identidade+visual.&type=phone_number&app_absent=0"
+                        target="_blank"
+                        data-aos="flip-up" 
+                        data-aos-delay="450"
                     >
                         Contato
                     </a>
@@ -53,7 +61,7 @@
 
             <main class="hero container">
                 
-                <div class="hero-text">
+                <div class="hero-text" data-aos="fade-right" data-aos-delay="350">
                     <div class="hero-name">
                         <h1>Letícia</h1>
                         <h1>Papa</h1>
@@ -64,14 +72,14 @@
                     </div>   
                 </div>
 
-                <div class="hero-img">
+                <div class="hero-img" data-aos="zoom-in-up" data-aos-delay="350">
                     <img 
                         src="assets/hero-img.jpg" 
                         alt="Hero Image"
                     />
                 </div>
 
-                <div class="hero-link">
+                <div class="hero-link" data-aos="fade-left" data-aos-delay="350">
                     <a 
                         href="https://api.whatsapp.com/send/?phone=%553192414546&text=Tenho+interesse+nos+seus+servi%C3%A7os+de+identidade+visual.&type=phone_number&app_absent=0"
                         target="_blank"
@@ -87,7 +95,7 @@
 
     <section id="about" class="about">
         <div class="container about-content">
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-right" data-aos-delay="350">
                 <h2>Quem sou eu?</h2>
 
                 <p>
@@ -95,7 +103,7 @@
                 </p>
             </div>
 
-            <div class="about-img">
+            <div class="about-img" data-aos="fade-left" data-aos-delay="350">
                 <img 
                     src="assets/about-img.jpg" 
                     alt="About Image"
@@ -108,11 +116,11 @@
 
     <section class="phrase">
         <div class="container phrase-content">
-            <p>
+            <p data-aos="zoom-in" data-aos-delay="350">
                 <span class="fa fa-quote-left quotes"></span> <br> Comunicar com propósito ainda vai mudar o mundo :)
             </p>
 
-            <span class="author">
+            <span class="author" data-aos="fade-left" data-aos-delay="350">
                 Letícia Papa
             </span>
         </div>
@@ -121,14 +129,14 @@
     <!-- SERVICES    -->
 
     <section id="services" class="services">
-        <div class="services-content container">
+        <div class="services-content container" data-aos="zoom-in-up" data-aos-delay="350">
             <h2>Meus serviços</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum repudiandae obcaecati, error voluptatibus alias tempore vel.
             </p>
         </div>
 
-        <section class="works">
+        <section class="works" data-aos="zoom-in-down" data-aos-delay="350">
             <div class="work">
                 <img src="assets/work1.png" alt="Consultoria de Comunicação">
 
@@ -222,6 +230,7 @@
         </span>
     </a>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

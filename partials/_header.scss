@@ -1,5 +1,7 @@
 header {
+    position: relative;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -65,7 +67,9 @@ header {
 
 .navigation.active {
     transform: translateX(40%);
-    right: 25%;
+    right: 0.1%;
+    z-index: 99;
+    opacity: 0.6;
 }
 
 .mobile-menu.active .line1 {
@@ -93,6 +97,10 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header-content {
         width: 100%;
         align-items: center;
@@ -116,7 +124,7 @@ header {
     .navigation {
         position: absolute;
         top: 12.5%;
-        right: 0;
+        right: -100%;
         height: 100vh;
         width: 70%;
         background: $primary-normal;
@@ -125,10 +133,10 @@ header {
         align-items: center;
         justify-content: center;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;    
+        transition: transform 0.3s ease-in-out;
         background: #06121e;
         opacity: 0.86;
-    }
+}
 
     .navigation a {
         margin-left: 0;
